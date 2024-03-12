@@ -1,12 +1,15 @@
 public class MinhaClasse {
     // Atributos privados
-    private int atributoPrivado;
+    private int AtributoPrivado;
     
     // Atributo protegido
-    protected string atributoProtegido;
+    protected string AtributoProtegido;
     
     // Atributo público
-    public double atributoPublico;
+    public double AtributoPublico;
+    
+    // Atributo com expressão lambda
+    private string AtributoLambda => this.AtributoPublico.Sum(ap => ap.Value);
 
     // Construtor
     public MinhaClasse(int valorPrivado, string valorProtegido, double valorPublico) {
